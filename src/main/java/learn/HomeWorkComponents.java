@@ -20,15 +20,18 @@ public class HomeWorkComponents {
         }
     }
 
-    protected int recursionMethod(int n) {
+    protected int factorialRecursionMethod(int n) {
+        // stop number O
         if (n <= 1)
             return 1;
-        return (n * recursionMethod(n -1));
+        return (n * factorialRecursionMethod(n -1));
     }
 
     protected List<Integer> sortNumbersFromLowestNumberToHighest(List<Integer> numbers) {
         Collections.sort(numbers);
+        //sort numbers to ordered list
         Collections.reverse(numbers);
+        //reverse numbers to present the number from the lowest to highest
         return numbers;
     }
 
@@ -39,9 +42,11 @@ public class HomeWorkComponents {
         for (Integer number : numbers) {
             if (number > largest) {
                 largest = number;
+                // add largest number when number is > than largest variable
             }
             if (number < smallest) {
                 smallest = number;
+                // add smallest number when number is < than smallest variable
             }
         }
 

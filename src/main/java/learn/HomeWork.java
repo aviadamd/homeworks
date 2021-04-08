@@ -23,7 +23,8 @@ public class HomeWork {
     @Order(2)
     @DisplayName("question 2: recursionMethodTest")
     void recursionMethodTest() {
-        System.out.println(homeWorkComponents.recursionMethod(3));
+        int fac = 5;
+        System.out.println("Factorial of number "+fac+" is : " + homeWorkComponents.factorialRecursionMethod(fac));
     }
 
     @Test
