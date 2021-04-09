@@ -3,7 +3,7 @@ package learn;
 import org.junit.jupiter.api.*;
 
 @TestMethodOrder(MethodOrderer.OrderAnnotation.class)
-public class HomeWork {
+public class HomeWorkTests {
 
     private HomeWorkComponents homeWorkComponents;
 
@@ -46,7 +46,7 @@ public class HomeWork {
     @Order(5)
     @DisplayName("question 4: printRandomNumbersWithoutRepetition")
     public void printRandomNumbersWithoutRepetition() {
-        homeWorkComponents.randomNumbersWithoutRepetition(1000).forEach(System.out::println);
+        homeWorkComponents.executeRandomDistinctNumbers(1000).forEach(System.out::println);
     }
 
 }
